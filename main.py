@@ -16,9 +16,9 @@ payload = {
         }
 headers = {'content-type': 'application/json'}
 
-endpoint_node = config.ENDPOINT_BASE + "prod/lambda-at-rest-node"
-endpoint_python = config.ENDPOINT_BASE + "prod/lambda-at-rest-python"
-endpoint_java = config.ENDPOINT_BASE + "prod/lambda-at-rest-java"
+endpoint_node = config.ENDPOINT_BASE + "/lambda-at-rest-node"
+endpoint_python = config.ENDPOINT_BASE + "/lambda-at-rest-python"
+endpoint_java = config.ENDPOINT_BASE + "/lambda-at-rest-java"
 
 def run_post(endpoint, payload):
     r = requests.post(endpoint, data=json.dumps(payload), headers=headers)
