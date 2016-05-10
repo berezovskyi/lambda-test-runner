@@ -30,5 +30,5 @@ while True:
     run_post(endpoint_python, payload)
     time.sleep(random.uniform(0.1, 5))
     run_post(endpoint_java, payload)
-    time.sleep(random.uniform(90, 300))
+    #time.sleep(random.uniform(90, 300))
     print("xxx")
